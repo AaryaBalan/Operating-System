@@ -31,7 +31,30 @@ The **Kernel** is the **core part of an Operating System**. It acts as a bridge 
 
 ---
 
-## 📌 What is a Kernel?
+## 📌 Table of Contents
+
+* [1. What is a Kernel?](#1-what-is-a-kernel)
+* [2. Why Do We Need a Kernel?](#2-why-do-we-need-a-kernel)
+* [3. User Mode and Kernel Mode](#3-user-mode-and-kernel-mode)
+* [4. How Does an Application Communicate with the Kernel?](#4-how-does-an-application-communicate-with-the-kernel)
+* [5. Functions of the Kernel](#5-functions-of-the-kernel)
+* [6. Types of Kernel](#6-types-of-kernel)
+  * [6.1 Monolithic Kernel](#61-monolithic-kernel)
+  * [6.2 Microkernel](#62-microkernel)
+  * [6.3 Hybrid Kernel](#63-hybrid-kernel)
+  * [6.4 Nanokernel](#64-nanokernel)
+  * [6.5 Exokernel](#65-exokernel)
+* [7. Kernel Types — Quick Comparison](#7-kernel-types--quick-comparison)
+* [8. Working of a Kernel](#8-working-of-a-kernel)
+* [9. Example: Opening a File](#9-example-opening-a-file)
+* [10. Example: Running Multiple Applications](#10-example-running-multiple-applications)
+* [11. Placement Questions](#11-placement-questions)
+* [12. Placement Quick Revision](#12-placement-quick-revision)
+* [13. What to Study Next](#13-what-to-study-next)
+
+---
+
+# 1. What is a Kernel?
 
 Think of the kernel as the **main manager of the computer**.
 
@@ -75,7 +98,7 @@ The kernel handles the complicated interaction with the hardware.
 
 ---
 
-# 🎯 Why Do We Need a Kernel?
+# 2. Why Do We Need a Kernel?
 
 Without a kernel, every application would have to understand and control hardware by itself.
 
@@ -108,7 +131,7 @@ The kernel controls access to the resources.
 
 ---
 
-# 🔐 User Mode and Kernel Mode
+# 3. User Mode and Kernel Mode
 
 One of the most important concepts for placements is the separation between:
 
@@ -153,7 +176,7 @@ This separation helps protect the system.
 
 ---
 
-# 📞 How Does an Application Communicate with the Kernel?
+# 4. How Does an Application Communicate with the Kernel?
 
 Applications use **system calls** to request services from the kernel.
 
@@ -207,7 +230,7 @@ Application
 
 ---
 
-# ⚙️ Functions of the Kernel
+# 5. Functions of the Kernel
 
 The kernel is responsible for several important operations.
 
@@ -410,7 +433,7 @@ This allows processes to exchange information in a controlled way.
 
 ---
 
-# 🏗️ Types of Kernel
+# 6. Types of Kernel
 
 There are several kernel designs.
 
@@ -426,7 +449,7 @@ Kernel Types
 
 ---
 
-# 1. Monolithic Kernel
+## 6.1 Monolithic Kernel
 
 ## Simple Idea
 
@@ -462,7 +485,7 @@ A monolithic kernel puts most OS services inside **kernel space**.
 
 ---
 
-# 2. Microkernel
+## 6.2 Microkernel
 
 ## Simple Idea
 
@@ -505,7 +528,7 @@ Other services are moved to **user space**.
 
 ---
 
-# 3. Hybrid Kernel
+## 6.3 Hybrid Kernel
 
 ## Simple Idea
 
@@ -536,7 +559,7 @@ Some services remain in kernel space for performance, while other design element
 
 ---
 
-# 4. Nanokernel
+## 6.4 Nanokernel
 
 ## Simple Idea
 
@@ -564,7 +587,7 @@ Examples:
 
 ---
 
-# 5. Exokernel
+## 6.5 Exokernel
 
 ## Simple Idea
 
@@ -592,7 +615,7 @@ Hardware Resources
 
 ---
 
-# ⚖️ Kernel Types — Quick Comparison
+# 7. Kernel Types — Quick Comparison
 
 | Kernel          | Main Idea                        | Main Advantage          | Main Disadvantage          |
 | --------------- | -------------------------------- | ----------------------- | -------------------------- |
@@ -604,7 +627,7 @@ Hardware Resources
 
 ---
 
-# 🔄 Working of a Kernel
+# 8. Working of a Kernel
 
 The kernel is loaded during system boot and remains active while the system is running.
 
@@ -630,7 +653,7 @@ A simplified sequence is:
 
 ---
 
-# 💻 Example: Opening a File
+# 9. Example: Opening a File
 
 Suppose you open:
 
@@ -668,7 +691,7 @@ The kernel coordinates the entire operation.
 
 ---
 
-# 🔥 Example: Running Multiple Applications
+# 10. Example: Running Multiple Applications
 
 Suppose you have:
 
@@ -700,7 +723,7 @@ The protection mechanisms prevent one process from freely accessing another's pr
 
 ---
 
-# 🎯 Placement Questions
+# 11. Placement Questions
 
 ### 1. What is a kernel?
 
@@ -763,7 +786,7 @@ Microkernel
 
 ---
 
-# ⭐ Placement Quick Revision
+# 12. Placement Quick Revision
 
 Remember this:
 
@@ -799,7 +822,7 @@ Security        → Protection and access control
 
 ---
 
-# 🚀 What to Study Next
+# 13. What to Study Next
 
 After understanding the kernel, the natural next topics are:
 
