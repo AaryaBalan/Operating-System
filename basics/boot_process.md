@@ -6,7 +6,33 @@
 
 ---
 
-## 1. What is the Boot Process?
+## 📌 Table of Contents
+
+* [1. What is the Boot Process?](#1-what-is-the-boot-process)
+* [2. Step 1 — Power Supply Initialization](#2-step-1--power-supply-initialization)
+* [3. Step 2 — BIOS / UEFI Starts](#3-step-2--bios--uefi-starts)
+  * [POST — Power-On Self-Test](#post--power-on-self-test)
+* [4. Step 3 — Finding the Boot Device](#4-step-3--finding-the-boot-device)
+  * [MBR vs GPT and UEFI](#mbr-vs-gpt-and-uefi)
+* [5. Step 4 — Boot Loader Runs](#5-step-4--boot-loader-runs)
+* [6. Step 5 — Kernel is Loaded](#6-step-5--kernel-is-loaded)
+* [7. Step 6 — Init / systemd Starts](#7-step-6--init--systemd-starts)
+  * [Runlevels](#runlevels)
+* [8. Step 7 — System Services and Daemons Start](#8-step-7--system-services-and-daemons-start)
+* [9. Step 8 — Login Screen Appears](#9-step-8--login-screen-appears)
+* [10. Step 9 — Desktop Environment Loads](#10-step-9--desktop-environment-loads)
+* [11. BIOS/UEFI — Important Functions](#11-biosuefi--important-functions)
+* [12. Complete Boot Process](#12-complete-boot-process)
+* [13. Technical Explanation](#13-technical-explanation)
+* [14. Boot Process vs Operating System](#14-boot-process-vs-operating-system)
+* [15. Placement-Focused Questions](#15-placement-focused-questions)
+* [16. Quick Revision](#16-quick-revision)
+* [17. One-Minute Interview Answer](#17-one-minute-interview-answer)
+* [18. Key Takeaways](#18-key-takeaways)
+
+---
+
+# 1. What is the Boot Process?
 
 Think of starting a computer like **opening a shop in the morning**.
 
@@ -393,7 +419,7 @@ Ready to Use
 
 ---
 
-# BIOS/UEFI — Important Functions
+# 11. BIOS/UEFI — Important Functions
 
 BIOS/UEFI performs several important jobs during startup.
 
@@ -410,7 +436,7 @@ Modern UEFI systems can also work with security technologies such as **Secure Bo
 
 ---
 
-# Complete Boot Process
+# 12. Complete Boot Process
 
 Here is the entire process in one diagram:
 
@@ -448,7 +474,7 @@ Here is the entire process in one diagram:
 
 ---
 
-# Technical Explanation
+# 13. Technical Explanation
 
 Now let's look at the process from an operating-system perspective.
 
@@ -468,7 +494,7 @@ That process starts required services and eventually provides the login environm
 
 ---
 
-# Boot Process vs Operating System
+# 14. Boot Process vs Operating System
 
 A common interview confusion is:
 
@@ -498,7 +524,7 @@ So, **BIOS/UEFI is firmware, not the operating system.**
 
 ---
 
-# Placement-Focused Questions
+# 15. Placement-Focused Questions
 
 ### 1. What is booting?
 
@@ -591,7 +617,7 @@ The kernel performs its initialization and eventually starts the initial user-sp
 
 ---
 
-# Quick Revision
+# 16. Quick Revision
 
 Remember the boot process as:
 
@@ -612,13 +638,13 @@ Remember the boot process as:
 
 ---
 
-# One-Minute Interview Answer
+# 17. One-Minute Interview Answer
 
 > **When we press the power button, the PSU provides power to the computer's components. BIOS or UEFI firmware then starts and performs POST to check important hardware. After that, the firmware finds a bootable device according to the boot configuration. It starts the boot loader, such as GRUB or Windows Boot Manager. The boot loader loads the operating system kernel into RAM and transfers control to it. The kernel initializes the system and starts the initial user-space process such as init or systemd. System services are then started, followed by the login screen and finally the desktop environment. This complete sequence is called the boot process.**
 
 ---
 
-## Key Takeaways
+# 18. Key Takeaways
 
 * **Booting** = Starting the computer and loading the OS.
 * **BIOS/UEFI** = Firmware that begins the boot process.
