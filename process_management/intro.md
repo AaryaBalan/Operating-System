@@ -4,7 +4,66 @@
 
 ---
 
-## 1. What is Process Management?
+## 📌 Table of Contents
+
+* [1. What is Process Management?](#1-what-is-process-management)
+* [2. What Does Process Management Mean?](#2-what-does-process-management-mean)
+* [3. Why Do We Need Process Management?](#3-why-do-we-need-process-management)
+* [4. Program vs Process](#4-program-vs-process)
+* [5. What Information Does the OS Need About a Process?](#5-what-information-does-the-os-need-about-a-process)
+* [6. Process Control Block (PCB)](#6-process-control-block-pcb)
+* [7. Process States](#7-process-states)
+* [8. New State](#8-new-state)
+* [9. Ready State](#9-ready-state)
+* [10. Running State](#10-running-state)
+* [11. Waiting / Blocked State](#11-waiting--blocked-state)
+* [12. Terminated State](#12-terminated-state)
+* [13. CPU-Bound vs I/O-Bound Processes](#13-cpu-bound-vs-io-bound-processes)
+* [14. CPU-Bound Process](#14-cpu-bound-process)
+* [15. I/O-Bound Process](#15-io-bound-process)
+* [16. CPU-Bound vs I/O-Bound](#16-cpu-bound-vs-io-bound)
+* [17. Why Is I/O Important for CPU Scheduling?](#17-why-is-io-important-for-cpu-scheduling)
+* [18. Multiprogramming](#18-multiprogramming)
+* [19. Multitasking](#19-multitasking)
+* [20. Process Scheduling](#20-process-scheduling)
+* [21. Why Do We Need CPU Scheduling?](#21-why-do-we-need-cpu-scheduling)
+* [22. Important Scheduling Terms](#22-important-scheduling-terms)
+* [23. Process Creation](#23-process-creation)
+* [24. Parent and Child Processes](#24-parent-and-child-processes)
+* [25. Process Termination](#25-process-termination)
+* [26. What Happens When a Process Terminates?](#26-what-happens-when-a-process-terminates)
+* [27. Context Switching](#27-context-switching)
+* [28. Simple Context-Switch Example](#28-simple-context-switch-example)
+* [29. What Is Saved During a Context Switch?](#29-what-is-saved-during-a-context-switch)
+* [30. Why Is Context Switching Necessary?](#30-why-is-context-switching-necessary)
+* [31. Is Context Switching Free?](#31-is-context-switching-free)
+* [32. What Causes a Context Switch?](#32-what-causes-a-context-switch)
+* [33. Process Synchronization](#33-process-synchronization)
+* [34. Why Do We Need Synchronization?](#34-why-do-we-need-synchronization)
+* [35. Race Condition](#35-race-condition)
+* [36. Critical Section](#36-critical-section)
+* [37. Inter-Process Communication (IPC)](#37-inter-process-communication-ipc)
+* [38. Deadlock](#38-deadlock)
+* [39. Simple Deadlock Example](#39-simple-deadlock-example)
+* [40. Four Conditions for Deadlock](#40-four-conditions-for-deadlock)
+* [41. Process Management — Big Picture](#41-process-management--big-picture)
+* [42. Complete Process Lifecycle](#42-complete-process-lifecycle)
+* [43. How Process Management Helps CPU Utilization](#43-how-process-management-helps-cpu-utilization)
+* [44. Process Management vs CPU Scheduling](#44-process-management-vs-cpu-scheduling)
+* [45. Process vs Thread](#45-process-vs-thread)
+* [46. Important Placement Comparison](#46-important-placement-comparison)
+* [47. Preemptive vs Non-Preemptive Scheduling](#47-preemptive-vs-non-preemptive-scheduling)
+* [48. Scheduler vs Dispatcher](#48-scheduler-vs-dispatcher)
+* [49. Long-Term, Short-Term and Medium-Term Schedulers](#49-long-term-short-term-and-medium-term-schedulers)
+* [50. Interview Questions You Should Know](#50-interview-questions-you-should-know)
+* [51. Frequently Confused Concepts](#51-frequently-confused-concepts)
+* [52. Placement Cheat Sheet](#52-placement-cheat-sheet)
+* [53. One-Minute Revision](#53-one-minute-revision)
+* [54. Final Mental Model](#54-final-mental-model)
+
+---
+
+# 1. What is Process Management?
 
 A **process** is a **program that is currently running**.
 
@@ -171,9 +230,7 @@ Priority: High
 Open files: ...
 ```
 
-This information is stored in a structure called the:
-
-# Process Control Block (PCB)
+This information is stored in a structure called the **Process Control Block (PCB)**.
 
 A **PCB** is a data structure maintained by the Operating System for each process.
 
@@ -181,7 +238,7 @@ You can think of it as the process's **record card**.
 
 ---
 
-## 6. Process Control Block (PCB)
+# 6. Process Control Block (PCB)
 
 A PCB generally contains information such as:
 
@@ -882,9 +939,7 @@ Load B's saved state
 CPU continues B
 ```
 
-This is called a:
-
-# Context Switch
+This is called a **Context Switch**.
 
 ---
 
@@ -1161,9 +1216,7 @@ Common synchronization mechanisms include:
 
 Processes sometimes need to communicate with each other.
 
-This is called:
-
-# Inter-Process Communication (IPC)
+This is called **Inter-Process Communication (IPC)**.
 
 For example:
 
