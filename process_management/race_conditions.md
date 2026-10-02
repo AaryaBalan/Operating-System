@@ -8,6 +8,51 @@ In simple terms:
 
 ---
 
+## 📌 Table of Contents
+
+* [1. First, Understand the Problem](#1-first-understand-the-problem)
+* [2. What Is a Race Condition?](#2-what-is-a-race-condition)
+* [3. Why Is It Called a "Race"?](#3-why-is-it-called-a-race)
+* [4. The Most Important Idea](#4-the-most-important-idea)
+* [5. What Is a Shared Resource?](#5-what-is-a-shared-resource)
+* [6. What Is Concurrency?](#6-what-is-concurrency)
+* [7. The Most Important Example: `balance += 10`](#7-the-most-important-example-balance--10)
+* [8. How a Race Condition Happens](#8-how-a-race-condition-happens)
+* [9. Step-by-Step Race Condition](#9-step-by-step-race-condition)
+* [10. Another Very Simple Example: Counter](#10-another-very-simple-example-counter)
+* [11. Why Does This Happen?](#11-why-does-this-happen)
+* [12. What Is an Atomic Operation?](#12-what-is-an-atomic-operation)
+* [13. Critical Section](#13-critical-section)
+* [14. Race Condition vs Critical Section](#14-race-condition-vs-critical-section)
+* [15. What Causes Race Conditions?](#15-what-causes-race-conditions)
+* [16. Effects of Race Conditions](#16-effects-of-race-conditions)
+* [17. How Do We Prevent Race Conditions?](#17-how-do-we-prevent-race-conditions)
+* [18. Mutex](#18-mutex)
+* [19. Semaphore](#19-semaphore)
+* [20. Mutex vs Semaphore](#20-mutex-vs-semaphore)
+* [21. Monitor](#21-monitor)
+* [22. Atomic Operations](#22-atomic-operations)
+* [23. Compare-and-Swap (CAS)](#23-compare-and-swap-cas)
+* [24. Disabling Interrupts](#24-disabling-interrupts)
+* [25. Proper Scheduling Is Not a Real Fix](#25-proper-scheduling-is-not-a-real-fix)
+* [26. Race Condition Example With Threads](#26-race-condition-example-with-threads)
+* [27. Solving the Counter Problem With a Mutex](#27-solving-the-counter-problem-with-a-mutex)
+* [28. Important Concept: Mutual Exclusion](#28-important-concept-mutual-exclusion)
+* [29. Race Condition vs Deadlock](#29-race-condition-vs-deadlock)
+* [30. Race Condition vs Data Race](#30-race-condition-vs-data-race)
+* [31. Race Condition in Real Life](#31-race-condition-in-real-life)
+* [32. Race Condition in Ticket Booking](#32-race-condition-in-ticket-booking)
+* [33. Race Condition and Critical Section](#33-race-condition-and-critical-section)
+* [34. The Critical Section Problem](#34-the-critical-section-problem)
+* [35. What Is Bounded Waiting?](#35-what-is-bounded-waiting)
+* [36. Race Condition and OS Scheduler](#36-race-condition-and-os-scheduler)
+* [37. Placement Interview Questions](#37-placement-interview-questions)
+* [38. Placement-Level Summary](#38-placement-level-summary)
+* [39. Technical Explanation](#39-technical-explanation)
+* [40. The Three Most Important Things for Placements](#40-the-three-most-important-things-for-placements)
+
+---
+
 # 1. First, Understand the Problem
 
 Imagine you have:
